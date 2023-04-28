@@ -1,0 +1,37 @@
+:root {
+  --buttons: #fe0001;
+  --major-ui: #333;
+  --extra-ui: rgb(79, 77, 66);
+  --writings: rgb(192, 194, 188);
+  --cards: #847e7e;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0 4rem 4rem 4rem;
+  gap: 15px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  border-radius: 5px 5px 5px 5px;
+}
+
+form h1 {
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 1rem;
+  width: 70%;
+  height: 2rem;
+}
+
+[type="submit"] {
+  width: 115px;
+  background-color: var(--buttons);
+  border: solid 0px;
+  border-radius: 5px 5px 5px 5px;
+}

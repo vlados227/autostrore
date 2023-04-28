@@ -1,9 +1,13 @@
 :root {
-  --buttons: #fe053f;
+  --buttons: #fe0001;
   --major-ui: #333;
   --extra-ui: rgb(79, 77, 66);
   --writings: rgb(192, 194, 188);
   --cards: #847e7e;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +17,8 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   background-color: var(--major-ui);
   color: #fff;
   display: flex;
@@ -24,6 +30,11 @@ header {
 
 header h1 {
   white-space: none;
+}
+
+header h1 > a {
+  text-decoration: none;
+  color: white;
 }
 
 nav ul {
@@ -101,7 +112,7 @@ nav a {
 }
 
 #featured-products-header {
-  margin-top: calc(0.83rem+15px);
+  margin: 2rem 0 2rem 0;
   text-align: center;
 }
 
@@ -139,7 +150,12 @@ nav a {
 
 .about-us {
   background-color: #a69f9f;
-  padding: 5rem;
+  padding: 2rem;
+}
+
+.about-us a {
+  color: black;
+  opacity: 0.8;
 }
 
 footer {
@@ -175,6 +191,10 @@ footer p {
     padding-left: 1rem;
   }
 
+  header ul>li:last-child {
+    margin: 0;
+  }
+
   header h1 {
     display: block;
   }
@@ -185,7 +205,7 @@ footer p {
     align-items: center;
     flex-wrap: wrap;
     height: 6vh;
-    background-color: #000;
+    /* background-color: #000; */
     width: 100%;
     border-radius: 5px 5px 5px 5px;
   }

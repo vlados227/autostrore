@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="auth.css">
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../../index.html">Название магазина</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><img src="../../images/cart icon.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="../../images/search icon.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="auth.html"><img src="../../images/user icon.svg" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <h1>Регистрация</h1>
+        <input required placeholder="номер телефона" type="tel" name="phone" id="phone" pattern="[789][0-9]{9}"/>
+        <input required placeholder="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <input type="submit">
+      </form>
+      <div class="about-us">
+        <h2 style="text-align: center">
+          Соцсети: <a href="#">VK</a>
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+        </h2>
+      </div>
+    </main>
+    <footer>
+      <p><span class="important">адрес:</span> Московское шоссе 120</p>
+      <p><span class="important">телефон:</span> 8 967 453 3490</p>
+    </footer>
+  </body>
+</html>
