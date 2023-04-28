@@ -1,6 +1,8 @@
 :root {
-  --buttons: #d25f08;
+  --buttons: #fe053f;
   --major-ui: #333;
+  --extra-ui: rgb(79, 77, 66);
+  --writings: rgb(192, 194, 188);
   --cards: #847e7e;
 }
 
@@ -15,9 +17,13 @@ header {
   color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem;
+}
+
+header h1 {
+  white-space: none;
 }
 
 nav ul {
@@ -45,8 +51,12 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 10vw;
   text-align: center;
+}
+
+.hero #banner-hero {
+  width: 100%;
 }
 
 .cta-button {
@@ -54,8 +64,9 @@ nav a {
   color: #fff;
   display: inline-block;
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem 2rem;
+  border-radius: 5px 5px 5px 5px;
   text-decoration: none;
 }
 
@@ -102,14 +113,40 @@ nav a {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--major-ui);
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 footer p {
   display: inline;
+  margin-right: 15px;
+}
+
+footer ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul > li {
+  display: inline;
+}
+
+footer li > a,
+footer li > a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.important {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--writings);
 }
 
 @media screen and (max-width: 768px) {
@@ -180,11 +217,21 @@ footer p {
   .about-us {
     padding: 1rem;
   }
+
+  footer a, footer p{
+    font-size: .7rem;
+  }
 }
 
-@media screen and (max-width:405px) {
+@media screen and (max-width: 405px) {
   nav li {
     margin-right: 1vw;
     justify-content: space-around;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav {
+    padding: 0 10px 0 10px;
   }
 }
