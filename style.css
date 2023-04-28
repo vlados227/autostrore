@@ -17,7 +17,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 2%;
 }
 
 nav ul {
@@ -28,7 +28,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 
 nav a {
@@ -45,7 +45,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 5rem;
   text-align: center;
 }
 
@@ -53,9 +53,9 @@ nav a {
   background-color: var(--buttons);
   color: #fff;
   display: inline-block;
-  font-size: 1.5em;
-  margin-top: 20px;
-  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* padding: 0 50px 50px 50px; */
+  padding: 15px;
 }
 
 .product {
@@ -76,8 +76,8 @@ nav a {
   background-color: var(--cards);
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-  padding: 20px;
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 .product img {
@@ -88,24 +88,20 @@ nav a {
   background-color: var(--buttons);
   color: #fff;
   display: inline-block;
-  font-size: 1em;
-  margin-top: 20px;
-  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
   text-decoration: none;
-  border-radius: 5px 5px 5px 5px;
-}
-
-.about-us {
-  background-color: #a69f9f;
-  padding: 50px;
+  border-radius: 5px;
 }
 
 footer {
   background-color: var(--major-ui);
   color: #fff;
-  padding: 20px;
+  padding: 2rem;
   text-align: center;
 }
+
 footer p {
   display: inline;
 }
