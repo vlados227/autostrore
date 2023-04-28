@@ -19,7 +19,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 header h1 {
@@ -52,6 +52,7 @@ nav a {
   justify-content: center;
   align-items: center;
   padding: 10vw;
+  /* gap: 10vw; */
   text-align: center;
 }
 
@@ -68,6 +69,35 @@ nav a {
   padding: 1rem 2rem;
   border-radius: 5px 5px 5px 5px;
   text-decoration: none;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 0 4rem 4rem 4rem;
+}
+
+.category1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.category2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.category3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.category4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.catalog div {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--cards);
+  border-radius: 5px;
 }
 
 #featured-products-header {
@@ -125,22 +155,6 @@ footer {
 footer p {
   display: inline;
   margin-right: 15px;
-}
-
-footer ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-footer ul > li {
-  display: inline;
-}
-
-footer li > a,
-footer li > a:visited {
-  color: white;
-  text-decoration: none;
 }
 
 .important {
@@ -218,8 +232,9 @@ footer li > a:visited {
     padding: 1rem;
   }
 
-  footer a, footer p{
-    font-size: .7rem;
+  footer a,
+  footer p {
+    font-size: 0.7rem;
   }
 }
 
