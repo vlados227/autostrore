@@ -4,7 +4,8 @@
   --extra-ui: rgb(79, 77, 66);
   --writings: rgb(192, 194, 188);
   --cards: #847e7e;
-  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 form {
@@ -24,7 +25,7 @@ form h1 {
 }
 
 input {
-  display: block;
+  display: inline-block;
   margin: 1rem;
   width: 70%;
   height: 2rem;
@@ -45,7 +46,7 @@ input {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #submit-button {
     font-size: 1.1rem;
   }
