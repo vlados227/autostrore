@@ -4,6 +4,7 @@
     <title>проект</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css">
   </head>
   <body>
     <header>
@@ -27,9 +28,17 @@
       </nav>
     </header>
     <main>
+      <script src="slider.js"></script>
       <section class="hero">
-        <img id="banner-hero" src="images/banner1-945x532.webp" alt="" />
-        <!-- images folder is a placeholder -->
+        <div class="slider-container">
+          <img class="slider-img active" src="images/banner1-945x532.webp" alt="Image 1">
+          <img class="slider-img" src="images/banner2-945x532.webp" alt="Image 2">
+          
+          <div class="slider-nav">
+            <button class="slider-dot active" onclick="changeSlide(0)"></button>
+            <button class="slider-dot" onclick="changeSlide(1)"></button>
+          </div>
+        </div>
         <h2>Доступна рассрочка</h2>
         <a href="#" class="cta-button">оформить</a>
       </section>
@@ -61,7 +70,7 @@
         </a>
       </section>
       <div class="links">
-        <h3 style="margin: 0;">Связаться с нами можно в:</h3>
+        <h3>Связаться с нами :</h3>
         <div class="link-container">
           <a href="#"><img src="icons/vk.svg" alt="" /></a>
           <a href="#"><img src="icons/ig.svg" alt="" /></a>

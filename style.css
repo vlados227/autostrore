@@ -73,13 +73,8 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10vw;
-  /* gap: 10vw; */
+  padding: 4vw;
   text-align: center;
-}
-
-.hero #banner-hero {
-  width: 100%;
 }
 
 .cta-button {
@@ -165,24 +160,26 @@ nav a {
 
 .links {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
   background-color: #a69f9f;
   padding: 2rem;
 }
 
+.links h3 {
+  white-space: nowrap;
+}
+
 .link-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-color: var(--major-ui);
   color: white;
@@ -258,3 +255,8 @@ footer p {
   }
 }
 
+@media screen and (max-width:480px) {
+  .links h3 {
+    white-space: pre-wrap;
+  }
+}
