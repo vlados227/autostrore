@@ -4,6 +4,7 @@
   --extra-ui: rgb(79, 77, 66);
   --writings: rgb(192, 194, 188);
   --cards: #847e7e;
+  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 form {
@@ -14,7 +15,7 @@ form {
   margin: 1rem;
   padding: 0 4rem 4rem 4rem;
   gap: 15px;
-  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  box-shadow: var(--default-shadow);
   border-radius: 5px 5px 5px 5px;
 }
 
