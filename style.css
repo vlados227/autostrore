@@ -4,7 +4,8 @@
   --extra-ui: rgb(79, 77, 66);
   --writings: rgb(192, 194, 188);
   --cards: #847e7e;
-  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
 }
 
 html {
@@ -94,6 +95,12 @@ nav a {
   padding: 0 4rem 4rem 4rem;
 }
 
+.catalog a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .category1 {
   grid-area: 1 / 1 / 2 / 2;
 }
@@ -119,7 +126,7 @@ nav a {
 }
 
 .catalog div > img {
-  width: auto;
+  width: 100%;
 }
 
 #featured-products-header {
@@ -194,7 +201,7 @@ footer p {
     padding-left: 1rem;
   }
 
-  header ul>li:last-child {
+  header ul > li:last-child {
     margin: 0;
   }
 
@@ -215,6 +222,7 @@ footer p {
   .catalog {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
   }
 
   .cta-button {
