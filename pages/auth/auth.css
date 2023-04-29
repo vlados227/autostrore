@@ -28,6 +28,7 @@ input {
   margin: 1rem;
   width: 70%;
   height: 2rem;
+  text-align: center;
   border: solid 1px var(--extra-ui);
   border-radius: 5px 5px 5px 5px;
   box-shadow: var(--default-shadow);
