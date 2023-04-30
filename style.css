@@ -18,6 +18,17 @@ body {
   background-color: #e2e2e2;
 }
 
+#logo {
+  display: inline-block;
+  width: 40%;
+  cursor: pointer;
+}
+
+#logo-pic {
+  display: inline-block;
+  max-height: 35px;
+}
+
 header {
   background-color: var(--major-ui);
   color: #fff;
@@ -180,30 +191,12 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-
   header ul > li:last-child {
     margin: 0;
   }
 
   header h1 {
     display: block;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 6vh;
-    width: 100%;
-    border-radius: 5px 5px 5px 5px;
   }
 
   .catalog {
@@ -226,6 +219,12 @@ footer p {
 }
 
 @media screen and (max-width: 510px) {
+
+  header {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
   header h1 {
     font-size: 1.8rem;
   }
