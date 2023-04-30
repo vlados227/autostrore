@@ -35,10 +35,14 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .slider-nav button {
+    padding: 6% 15px;
+  }
+}
 
 @media screen and (max-width: 510px) {
   .slider-nav button {
     padding: 2% 15px;
-    margin: 10px 10px 0 10px;
   }
 }

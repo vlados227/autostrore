@@ -28,10 +28,10 @@ input {
   display: inline-block;
   margin: 1rem;
   width: 70%;
-  height: 2rem;
+  height: 3rem;
   text-align: center;
   font-size: 1rem;
-  border: solid 1px var(--extra-ui);
+  border: solid 0 var(--extra-ui);
   border-radius: 5px 5px 5px 5px;
   box-shadow: var(--default-shadow);
 }
@@ -39,9 +39,6 @@ input {
 [type="submit"] {
   width: 160px;
   height: auto;
-  background-color: var(--buttons);
-  border: solid 0px;
-  border-radius: 5px 5px 5px 5px;
 }
 
 #submit-button {
@@ -51,9 +48,10 @@ input {
 
 @media screen and (max-width: 768px) {
   #submit-button {
+    margin-top: 2vh;
     font-size: 1.2rem;
   }
   input {
-    width: 90%;
+    width: 100%;
   }
 }

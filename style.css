@@ -15,6 +15,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #e2e2e2;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
   color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
   margin-bottom: 0.75rem;
@@ -63,13 +64,12 @@ nav a {
 }
 
 .hero {
-  /* background-size: cover;
-  background-position: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10vw;
+  padding-top: 5vw;
   padding-bottom: 5vw;
   text-align: center;
 }
@@ -83,7 +83,7 @@ nav a {
   color: #fff;
   display: inline-block;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 4vh;
   padding: 1rem 2rem;
   border-radius: 5px 5px 5px 5px;
   text-decoration: none;
@@ -110,6 +110,7 @@ nav a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #fff;
   height: auto !important;
   border-radius: 5px;
   box-shadow: var(--default-shadow);
@@ -118,6 +119,7 @@ nav a {
 #featured-products-header {
   margin-top: 0;
   margin-bottom: 5vw;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -143,6 +145,7 @@ nav a {
   justify-content: center;
   align-items: center;
   background-color: #a69f9f;
+  gap: 2vw;
   padding: 2vh;
 }
 
@@ -220,19 +223,24 @@ footer p {
   .buy-button {
     font-size: 1rem;
   }
-
-  /* .links {
-    padding: 2rem;
-  } */
 }
 
 @media screen and (max-width: 510px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .link-container {
+    gap: 0;
+  }
+
   .links h3 {
+    font-size: 1.1rem;
     white-space: pre-wrap;
   }
 
   .links img {
-    scale: .6;
+    scale: 0.7;
   }
   .catalog {
     display: flex;
@@ -241,5 +249,13 @@ footer p {
 
   .catalog div {
     width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    margin: 2%;
   }
 }
