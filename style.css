@@ -12,15 +12,13 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #e2e2e2;
 }
 
 #logo {
-  /* display: inline-block;
-  width: 40%; */
   cursor: pointer;
 }
 
@@ -46,11 +44,11 @@ header {
   filter: invert(1);
 }
 
-/* nav {
+nav {
   display: flex;
   justify-content: center;
 }
-*/
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -60,18 +58,6 @@ nav ul {
  nav li {
   display: inline-block;
 }
-/*
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.2rem;
-  transition: all 0.2s ease-in-out;
-}
-
-nav a:hover {
-  color: var(--buttons);
-} */
 
 .hero {
   display: flex;
@@ -115,8 +101,8 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5vh;
-  grid-row-gap: 5vh;
+  grid-column-gap: 6vh;
+  grid-row-gap: 6vh;
   padding: 0 10vh 10vh 10vh;
 }
 
@@ -183,11 +169,6 @@ footer {
   font-size: 1rem;
 }
 
-footer a,
-footer p {
-  font-size: 1rem;
-}
-
 .important {
   font-weight: 600;
   font-size: 1.2rem;
@@ -243,6 +224,7 @@ footer p {
   .catalog {
     display: flex;
     flex-direction: column;
+    grid-row-gap: 2rem;
   }
 
   .catalog div {
