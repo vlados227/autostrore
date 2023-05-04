@@ -21,12 +21,36 @@
 
 .individual-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 2rem;
+  padding: 2rem;
   width: 70vw;
-  height: 45vh;
+  height: auto;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: var(--default-shadow);
+}
+
+.individual-card img {
+  width: auto;
+  height: auto;
+}
+
+.individual-card h2 {
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.individual-card ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.specs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
