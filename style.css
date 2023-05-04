@@ -1,18 +1,14 @@
 :root {
   --buttons: #fe0001;
   --major-ui: #333;
-  --extra-ui: rgb(79, 77, 66);
-  --cards: rgb(192, 194, 188);
+  --extra-ui: #8f8787;
   --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
     0 0 0 1px rgb(10 10 10 / 2%);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   background-color: #e2e2e2;
@@ -26,6 +22,33 @@ body {
   display: inline-block;
   width: 160px;
   max-height: 90px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  justify-items: center;
+  background-color: var(--extra-ui);
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-container img {
+  scale: 2;
+  margin: 1rem;
 }
 
 header {
@@ -55,7 +78,7 @@ nav ul {
   padding: 0;
 }
 
- nav li {
+nav li {
   display: inline-block;
 }
 
@@ -68,7 +91,7 @@ nav ul {
   padding-top: 5vw;
   padding-bottom: 5vw;
   text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1612390191367-8c1bfe94e7c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuZGF0b3J5JTIwdGltZSUyMHN0b3JlJTIwY2hpbmVzZSUyMGFuZCUyMGF0JTIwc2l6ZSUyMGJlaW5nJTIwY29sb3JmdWwlMjBhdCUyMGltYWdlJTIwZnJvbSUyMGRlZmF1bHQlMjBwaWN0dXJlfDEyMDB4MTIwMHwxfHJlZCUyMHN0b3JlJTIwY2hpbmVzZSUyMGFuZCUyMGF0JTIwc2l6ZSUyMGJlaW5nJTIwY29sb3JmdWwlMjBhdCUyMGltYWdlJTIwZnJvbSUyMGRlZmF1bHQlMjBwaWN0dXJlfDEyMDB4MTIwMHwzfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+  background-image: url("https://images.unsplash.com/photo-1612390191367-8c1bfe94e7c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuZGF0b3J5JTIwdGltZSUyMHN0b3JlJTIwY2hpbmVzZSUyMGFuZCUyMGF0JTIwc2l6ZSUyMGJlaW5nJTIwY29sb3JmdWwlMjBhdCUyMGltYWdlJTIwZnJvbSUyMGRlZmF1bHQlMjBwaWN0dXJlfDEyMDB4MTIwMHwxfHJlZCUyMHN0b3JlJTIwY2hpbmVzZSUyMGFuZCUyMGF0JTIwc2l6ZSUyMGJlaW5nJTIwY29sb3JmdWwlMjBhdCUyMGltYWdlJTIwZnJvbSUyMGRlZmF1bHQlMjBwaWN0dXJlfDEyMDB4MTIwMHwzfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -142,7 +165,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #a69f9f;
+  background-color: var(--extra-ui);
   gap: 2vw;
   padding: 2vh;
 }
@@ -175,13 +198,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
   header ul > li:last-child {
     margin: 0;
   }
 
   header h1 {
     display: block;
-    font-size: 2rem;
+  }
+
+  .article {
+    display: none;
   }
 
   .catalog {
@@ -193,13 +223,12 @@ footer {
     height: 30vh;
     margin: 0;
   }
-
-  .cta-button {
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 510px) {
+  body {
+    font-size: 20px;
+  }
 
   header {
     position: sticky;
@@ -214,7 +243,6 @@ footer {
   }
 
   .links h3 {
-    font-size: 1.1rem;
     white-space: pre-wrap;
   }
 
@@ -240,11 +268,11 @@ footer {
   }
 
   .ui {
-    scale: .8;
+    scale: 0.8;
   }
 }
 
-@media screen and (max-width:363px) {
+@media screen and (max-width: 363px) {
   #logo-pic {
     width: 114px;
   }
