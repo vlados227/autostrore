@@ -31,6 +31,7 @@
 }
 
 .individual-card img {
+  position: relative;
   width: 100%;
   height: auto;
 }
@@ -46,7 +47,7 @@
 .individual-card ul {
   display: inline-block;
   list-style: none;
-  font-size:20px;
+  font-size: 1.2rem;
 }
 
 .individual-card ul > li {
@@ -67,13 +68,34 @@
   color: #fff;
   background-color: var(--buttons);
   border-radius: 5px;
-  padding: .5vw;
+  padding: 10px;
   text-decoration: none;
   font-size: 1.1rem;
   cursor: pointer;
 }
 .specs button::before {
-  content: 'в корзину';
+  content: "в корзину";
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .individual-card {
+    font-size: 16px;
+    justify-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .individual-card ul {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:510px) {
+
+  .individual-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+}
