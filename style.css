@@ -48,7 +48,12 @@ body {
 
 .icon-container img {
   scale: 2;
-  margin: 1rem;
+  /* margin: 1rem; */
+}
+
+.icon-container p {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 header {

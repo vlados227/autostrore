@@ -1,13 +1,3 @@
-:root {
-  --buttons: #fe0001;
-  --major-ui: #333;
-  --extra-ui: rgb(79, 77, 66);
-  --writings: rgb(192, 194, 188);
-  --cards: #847e7e;
-  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
-    0 0 0 1px rgb(10 10 10 / 2%);
-}
-
 form {
   display: flex;
   flex-direction: column;

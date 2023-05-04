@@ -10,8 +10,8 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M233.631 837.885H350.332V345.187H233.631V837.885Z" fill="white" stroke="#1B1918" stroke-width="0.216" stroke-linecap="round" stroke-linejoin="round"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.10791 837.885H116.809V417.278H0.10791V837.885Z" fill="white" stroke="#1B1918" stroke-width="0.216" stroke-linecap="round" stroke-linejoin="round"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3060.38 486.432C3017.5 486.432 2985.33 518.604 2985.33 561.486C2985.33 602.579 3017.5 636.54 3060.38 636.54C3101.46 636.54 3133.65 602.579 3133.65 561.486C3133.65 518.604 3101.46 486.432 3060.38 486.432Z" fill="white" stroke="#1B1918" stroke-width="0.216" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M862.34 838V337.639V203.893L770.294 116H745V838H862.34Z" fill="#E30016"/>
-<path d="M1101.66 838H1219V116H1193.35L980.343 316.571L921.341 260.232V398.502L980.343 459.364L1101.66 337.639V838Z" fill="#E30016"/>
+<path d="M845.173 838V337.639V203.893L739.922 116H711V838H845.173Z" fill="#E30016"/>
+<path d="M1118.83 838H1253V116H1223.67L980.105 316.571L912.639 260.232V398.502L980.105 459.364L1118.83 337.639V838Z" fill="#E30016"/>
 </g>
 <defs>
 <clipPath id="clip0_0_1">

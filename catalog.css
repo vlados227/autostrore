@@ -1,12 +1,3 @@
-:root {
-  --buttons: #fe0001;
-  --major-ui: #333;
-  --extra-ui: rgb(79, 77, 66);
-  --cards: rgb(192, 194, 188);
-  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
-    0 0 0 1px rgb(10 10 10 / 2%);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +13,13 @@
 }
 
 .individual-card {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   align-items: center;
+  justify-items: center;
   margin: 2rem;
   padding: 2rem;
   width: 80vw;
@@ -33,6 +28,11 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: var(--default-shadow);
+}
+
+.individual-card img {
+  width: 100%;
+  height: auto;
 }
 
 .individual-card h2 {
@@ -49,19 +49,9 @@
   font-size:20px;
 }
 
-/* .specs a {
-  color: #000;
-  background-color: var(--buttons);
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
-  padding: .5vw;
-  font-size: 1.1rem;
+.individual-card ul > li {
+  margin-bottom: 5px;
 }
-
-.specs a::before{
-  content: 'купить';
-} */
 
 .specs {
   display: flex;
@@ -70,17 +60,20 @@
   align-items: center;
 }
 
-
-@media screen and (max-width: 768px) {
-  .individual-card {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-
-  .individual-card img {
-    width: 100%;
-  }
+.specs button {
+  margin-top: 1rem;
+  box-sizing: border-box;
+  border: 0px;
+  color: #fff;
+  background-color: var(--buttons);
+  border-radius: 5px;
+  padding: .5vw;
+  text-decoration: none;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
+.specs button::before {
+  content: 'в корзину';
+}
+
+@media screen and (max-width: 768px) {}
