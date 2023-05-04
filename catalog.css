@@ -1,0 +1,32 @@
+:root {
+  --buttons: #fe0001;
+  --major-ui: #333;
+  --extra-ui: rgb(79, 77, 66);
+  --cards: rgb(192, 194, 188);
+  --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.all-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10vh 10vh 10vh;
+}
+
+.individual-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  width: 70vw;
+  height: 45vh;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: var(--default-shadow);
+}
