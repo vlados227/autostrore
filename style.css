@@ -39,6 +39,10 @@ body {
   text-align: justify;
 }
 
+.article p{
+  margin: 0;
+}
+
 .icon-container {
   display: flex;
   flex-direction: column;
@@ -47,14 +51,15 @@ body {
   width: 100%;
 }
 
+.icon-container p{
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
 .icon-container img {
   scale: 2;
   /* margin: 1rem; */
-}
-
-.icon-container p {
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 header {
@@ -65,7 +70,6 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  margin-bottom: 0.75rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -174,7 +178,6 @@ nav li {
   background-color: var(--extra-ui);
   gap: 2vw;
   padding: 2vh;
-  padding-top: 0;
 }
 
 .links h3 {
