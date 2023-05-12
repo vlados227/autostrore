@@ -39,8 +39,14 @@ body {
   text-align: justify;
 }
 
-.article p{
+.article p {
   margin: 0;
+  font-weight: 500;
+}
+
+#about-company {
+  font-size: 1.1rem;
+  font-weight: 450;
 }
 
 .icon-container {
@@ -51,10 +57,10 @@ body {
   width: 100%;
 }
 
-.icon-container p{
+.icon-container p {
   text-align: center;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .icon-container img {
