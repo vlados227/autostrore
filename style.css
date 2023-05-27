@@ -2,6 +2,7 @@
   --buttons: #fe0001;
   --major-ui: #333;
   --extra-ui: #8f8787;
+  --success: #0edd20;
   --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
     0 0 0 1px rgb(10 10 10 / 2%);
 }
