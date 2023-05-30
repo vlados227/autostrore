@@ -2,6 +2,7 @@
   --buttons: #fe0001;
   --major-ui: #333;
   --extra-ui: #8f8787;
+  --success: #0edd20;
   --default-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
     0 0 0 1px rgb(10 10 10 / 2%);
 }
@@ -32,6 +33,7 @@ body {
   grid-row-gap: 0px;
   justify-content: center;
   justify-items: center;
+  align-items: center;
   background-color: var(--extra-ui);
   padding: 2rem;
   padding-bottom: 0;
@@ -45,8 +47,11 @@ body {
 }
 
 #about-company {
-  font-size: 1.1rem;
-  font-weight: 450;
+  font-family:'Source Sans Pro', sans-serif;
+  text-align: justify;
+  vertical-align: bottom;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .icon-container {
@@ -62,6 +67,10 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+.icon-container p:last-child {
+  margin-bottom: 0;
 }
 
 .icon-container img {
